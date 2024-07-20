@@ -1,0 +1,917 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+  body {
+    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    background-image: url(./sugarcosmatic.jpg);
+
+  }
+  h1{
+    text-align: center;
+    color: black;
+    font-family:'Times New Roman', Times, serif;
+  }
+  
+  #upperNavbar {
+    width: 100%;
+    background-color: rgb(201, 28, 126);
+    color: white;
+    height: 30px;
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #logoImage {
+    width: 10%;
+  }
+  
+  #searchButton {
+    font-size: large;
+    background-color: white;
+  }
+  
+  #searchBar {
+    color: white;
+    background-color: #212121;
+    border-radius: 5px;
+  }
+  
+  .redCart {
+    cursor: pointer;
+  }
+  
+  #nav-sticky {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+  }
+  
+  #mainNavbar {
+    width: 100%;
+    display: flex;
+    font-size: large;
+    background-color: black;
+    color: white;
+    justify-content: space-around;
+    height: 80px;
+    align-items: center;
+  }
+  
+  #lg {
+    width: 45%;
+    display: flex;
+    height: 40px;
+    border-radius: 10px;
+  }
+  
+  #lg input {
+    border-radius: 10px 0 0 10px;
+    width: 85%;
+    border: 1px solid white;
+  }
+  
+  #lg button {
+    border-radius: 0 10px 10px 0;
+    width: 15%;
+    border: 1px solid gray;
+  }
+  
+  #lr {
+    width: 20%;
+    display: flex;
+    gap: 5px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #hbd {
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* Dropdown styles */
+  #lower-nav {
+    width: 100%;
+    background-color: #212121;
+  }
+  
+  #l1 {
+    width: 60%;
+  }
+  
+  .dropbtn {
+    background-color: #212121;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content div {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    display: block;
+  }
+  
+  .ddm {
+    display: flex;
+  }
+  
+  .CAT {
+    width: 750px;
+    row-gap: 20px;
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto);
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    text-decoration: #212121;
+  }
+  
+  @media screen and (max-width: 992px) {
+    #lr {
+      padding-right: 50px;
+    }
+    #hbd {
+      padding-right: 20px;
+    }
+    #logoImage {
+      width: 30%;
+    }
+    #mainNavbar {
+      display: flex;
+      justify-content: space-around;
+    }
+    #searchButton,
+    #searchBar {
+      display: none;
+    }
+    #lower-nav {
+      height: 50px;
+    }
+    #l1 {
+      width: 100%;
+      display: flex;
+    }
+    #gt,
+    #bl,
+    #stor,
+    #ofr {
+      display: none;
+    }
+  }
+
+
+  
+  .middle-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+  }
+  
+  .middle-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .middle-section img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-out;
+  } 
+  
+  /* Card Styles */
+  .container1{
+    text-align: center;
+  }
+  .card-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .card {
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    padding: 16px;
+    width: 250px;
+    text-align: center;
+    background-color: #f8f8f8;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 250px;
+    border-bottom: 1px solid #dcdcdc;
+    padding-bottom: 8px;
+  }
+  
+  .card p {
+    margin: 8px 0;
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  .card button {
+    background-color: #fc2779;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .card button:hover {
+    background-color: #e61d66;
+  }
+  
+  .cart_active, .wishlist_active {
+    width: 14px;
+    height: 14px;
+    background-color: #fc2779;
+    border-radius: 50%;
+    font-size: 12px;
+    color: white;
+    position: absolute;
+    display: none;
+  }
+  
+  .cart_active {
+    top: 25px;
+    right: 92px;
+  }
+  
+  .wishlist_active {
+    top: 4%;
+    left: 88%;
+  }
+  
+  .title {
+    color: grey;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .title h1 {
+    margin: 10px;
+  }
+  
+  .shop, .checkout, .close {
+    background: #fc2779;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .shop:hover, .checkout:hover, .close:hover {
+    background-color: #e61d66;
+  }
+  
+  .modal-bg, .modal-bg2 {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+  }
+  
+  .modal-bg2 {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  .bg-active {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .modal {
+    background-color: white;
+    width: 50%;
+    height: 40%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+  }
+  
+  .modal button {
+    margin-top: 20px;
+    padding: 10px 20px;
+  }
+  
+  .modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .modal-close:hover {
+    color: red;
+  }
+  
+  .loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 80px;
+    height: 80px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .container2{
+    text-align: center;
+    color: #FFFFFF;
+  }
+  
+  .club-section {
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .club-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-radius: 10px;
+  }
+  
+  .club-logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .club-content {
+    max-width: 500px;
+  }
+  
+  .club-offer {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .club-details {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .club-join-btn {
+    display: inline-block;
+    background-color: #e40046;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  .club-join-btn:hover {
+    background-color: #c2003b;
+  }
+  .container{
+    text-align: center;
+  }
+  
+  .additional-section {
+    overflow-x: auto;
+    white-space: nowrap;
+    margin: 20px 0;
+  }
+  
+  .additional-card {
+    display: inline-block;
+    background-color: #fff;
+    width: 200px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .additional-card img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .additional-card p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .menu, .menu2 {
+    display: none;
+  }
+  
+  .menu .menu1, .menu2 .menu1 {
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .middle-section {
+      flex-direction: column;
+    }
+  
+    .menu {
+      display: block;
+    }
+  
+    .menu .menu1 {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .club-section {
+      padding: 10px;
+    }
+  
+    .club-banner {
+      padding: 20px;
+    }
+  
+    .club-logo {
+      width: 70px;
+    }
+  
+    .club-content {
+      max-width: 300px;
+    }
+  
+    .club-offer {
+      font-size: 20px;
+    }
+  
+    .club-details {
+      font-size: 16px;
+    }
+  
+    .club-join-btn {
+      font-size: 16px;
+    }
+  }
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px; 
+    width: 100%;
+  }
+  
+  
+  .stay-in-touch-section {
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 8px;
+}
+
+.info {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.info p {
+    color: #555;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info p i {
+    margin-left: 8px;
+}
+
+.subscription h2 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.subscription p {
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.email-subscription {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email-subscription input {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    margin-right: 10px;
+}
+
+.email-subscription button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.email-subscription button:hover {
+    background-color: #333;
+}
+
+
+
+  
+  #footer {
+    width: 100%;
+    height: 100%;
+    background-color: #000000; /* Black background */
+}
+
+.footer-container {
+    width: 80%;
+    height: 100%;
+    margin: auto; /* Centering the container */
+}
+
+.footer-company-logo {
+    width: 100%;
+    height: 20%; 
+}
+
+.footer-company-logo > div {
+    margin: auto;
+    height: 100%;
+    width: 14%; 
+}
+
+.footer-company-logo > div > img {
+    height: 100%;
+    width: 100%; 
+}
+
+
+.footer-reachout-links {
+  width: 100%;
+  height: auto; /* Adjust height as needed */
+  margin-bottom: 20px; /* Space below the social media links */
+}
+
+.footer-reachout-links > div {
+  margin: auto;
+  width: 30%; /* Adjust width of the container */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; /* Align social media icons with space around */
+}
+
+.footer-reachout-links > div > div {
+  width: 16%; /* Adjust width of each social media icon container */
+  height: 100%;
+  display: flex;
+  justify-content: center; /* Center social media icons horizontally */
+  align-items: center; /* Center social media icons vertically */
+}
+
+.footer-reachout-links > div > div > a > img {
+  max-width: 100%; /* Limit maximum width of the icon */
+  max-height: 100%; /* Limit maximum height of the icon */
+  display: block; /* Ensures the image is displayed as a block element */
+  object-fit: contain; /* Maintains the aspect ratio of the image within its container */
+}
+
+/* Customize colors for Font Awesome icons */
+.footer-reachout-links > div > div > a > .fab,
+.footer-reachout-links > div > div > a > .fas {
+  color:white; /* Custom color for icons */
+  font-size: 24px; /* Adjust icon size if needed */
+}
+
+
+ .footer-signup-app {
+    width: 100%;
+    height: 20%;
+    display: flex; 
+}
+
+.footer-signup-app > div {
+    height: 100%;
+    width: 50%;
+}
+
+.footer-signup-app > div > h5 {
+    color: #FFFFFF;
+    font-size: 19px;
+    margin: 15px 0px 20px 0px;
+    font-family: 'Poppins', sans-serif; 
+}
+
+.footer-signup-app > div > div {
+    height: 30%;
+    display: flex;
+}
+
+.footer-signup-app > div > div > input {
+    height: 100%;
+    width: 50%;
+    color: #FFFFFF;
+    background-color: transparent;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    border: none;
+    border-bottom-style: groove; 
+}
+
+.footer-signup-app-button > button {
+    color: #FFFFFF;
+    background-color: #fc2779;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    padding: 5px 13px;
+    border-radius: 5px;
+    border: 2px solid #fc2779;
+    width: 100%;
+    height: 100%; 
+} 
+ 
+
+.footer-signup-app-button > button:hover {
+  background-color: #ff0a54; /* Darker shade of pink on hover */
+  border-color: #ff0a54; /* Darker shade of pink border on hover */
+}
+
+/* Additional styles for other sections (information, get in touch) follow similarly detailed styling rules */
+
+#footer-para{
+    color: #999999;
+    font: 16px;
+    width: 35%;
+    height: auto;
+    font-family: 'Poppins', sans-serif;
+    /* border: 1px solid yellow; */
+}
+#footer-play-store{
+    /* border: 1px solid blue; */
+    width: 1fr;
+    height: 100%;
+    margin-right: 5px;
+    margin-left: 5px;
+    display: block;
+}
+#footer-apple-store{
+    /* border: 1px solid red; */
+    width: 1fr;
+    height: 100%;
+    display: block;
+}
+#footer-play-store>a>img{
+    width: 100%;
+    height: 50%;
+}
+#footer-apple-store>a>img{
+    width: 100%;
+    height: 50%;
+}
+.footer-information{
+    /* border: 1px solid pink; */
+    width: 100%;
+    height: 100px;
+}
+.footer-information>div:nth-child(1){
+    /* border: 1px solid white; */
+    height: 30%;
+}
+.footer-information>div>h5{
+    color: #FFFFFF;
+    font-size: 19px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0px 0px 8px;   
+}
+.footer-information>div:nth-child(2){
+    /* border: 1px solid blue; */
+    height: auto;
+    display: flex;
+    margin-top: 25px;
+}
+.footer-information>div:nth-child(2)>div{
+    /* border: 1px solid orange; */
+    width: 15%;
+}
+.footer-information>div:nth-child(2)>div:nth-child(2){
+    /* border: 1px solid orange; */
+    width: 25%;
+}
+.footer-information>div:nth-child(2)>div>a{
+    color: #999999;
+    font: 16px;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+.footer-information>div:nth-child(2)>div>a:hover{
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+.footer-get-in-touch{
+    /* border: 1px solid white; */
+    margin-top: 10px;
+}
+.footer-get-in-touch>div>h5{
+    color: #FFFFFF;
+    font-size: 19px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0px 0px 8px;
+}
+.footer-get-in-touch>div{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-get-in-touch-box1{
+    /* border: 1px solid blue; */
+}
+.footer-get-in-touch-box1>div{
+    display: flex;
+    margin-bottom: 5px;
+}
+.footer-get-in-touch-box1>div>div{
+    color: #FFFFFF;
+    font: 16px;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 8px;
+}
+.footer-get-in-touch-box1>a{
+    color: #999999;
+    font: 16px;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+.footer-get-in-touch-box1>a:hover{
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+.footer-get-in-touch-box1>a+div{
+    color: #808080;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+}
+.footer-get-in-touch-box2{
+    /* border: 1px solid red; */
+}
+.footer-get-in-touch-box2>div{
+    color: #FFFFFF;
+    font: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+.footer-get-in-touch-box2>a{
+    color: #999999;
+    font: 16px;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+.footer-get-in-touch-box2>a:hover{
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+.footer-get-in-touch-box3{
+    /* border: 1px solid wheat; */
+}
+.footer-get-in-touch-box3>div{
+    color: #FFFFFF;
+    font: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+.footer-get-in-touch-box3>a{
+    color: #999999;
+    font: 16px;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+.footer-get-in-touch-box3>a:hover{
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+.footer-get-in-touch-box4{
+    /* border: 1px solid green; */
+}
+.footer-get-in-touch-box4>div{
+    color: #FFFFFF;
+    font: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+.footer-get-in-touch-box4>a{
+    color: #999999;
+    font: 16px;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+.footer-get-in-touch-box4>a:hover{
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+.footer-get-in-touch-box5{
+    /* border: 1px solid pink; */
+}
+.footer-get-in-touch-box5>div{
+    color: #FFFFFF;
+    font: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+.footer-get-in-touch-box5>a{
+    color: #999999;
+    font: 16px;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+.footer-get-in-touch-box5>a:hover{
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+.footer-container>hr{
+    margin-top: 48px;
+    margin-bottom: 24px;
+}
+.footer-container>hr+div{
+    color: #FFFFFF;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}

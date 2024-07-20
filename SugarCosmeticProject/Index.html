@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="./Styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- <img src="https://via.placeholder.com/100?text=Club+Vellvette" alt="Club Vellvette" class="club-logo"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-nCJIoFGfp4LL7Hn8m2zjaZxh6F0zxpqay3RfLWSI5u8uFhWSsY8IC2dlnRZJxT+7Jjsu3PmD2jUvzDpThbDW4w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdn.sanity.io/images/gxmub2ol/production/98a9ebae1456c75c727d5fab8c934dae908a144c-1493x380.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@200&family=Open+Sans&family=Poppins:wght@200;400;600&family=Radio+Canada&family=Roboto&family=Roboto+Condensed:wght@400;700&family=Source+Sans+Pro&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation Section -->
+    <div id="nav-sticky">
+        <!-- Upper Navbar -->
+        <div id="upperNavbar">Get Rs.300 OFF on minimum spend of Rs.999.</div>
+
+        <!-- Main Navbar -->
+
+        <div id="mainNavbar">
+            <img id="logoImage"
+                src="https://cdn.sanity.io/images/gxmub2ol/production/98a9ebae1456c75c727d5fab8c934dae908a144c-1493x380.png"
+                alt="logo" onclick="navigateToHome()">
+            <div id="lg">
+                <input placeholder="     Try 'Liquid Lipstick'" id="searchBar">
+                <button id="searchButton">
+                    <i class="fas fa-search"></i> Search
+                </button>
+            </div>
+            <div id="lr">
+                <i class="fas fa-user-circle"></i>
+                <a href="login.html">
+                    <p id="loginText">Login/Register</p>
+                </a>
+            </div>
+            <div id="hbd">
+                <div>
+                    <i class="fas fa-heart"></i>
+                </div>
+                <a href="cart.html">
+                    <div class="redCart">
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                </a>
+                <div>
+                    <i class="fas fa-percentage"></i>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Lower Navbar -->
+        <div id="lower-nav">
+            <div id="l1">
+                <!-- Makeup Dropdown -->
+                <div class="dropdown">
+                    <button class="dropbtn">MAKEUP</button>
+                    <div class="dropdown-content">
+                        <a href="makeup.html">
+                            <div class="ddm">
+                                <div style="width: 250px;">
+                                    <a><b>Lips</b></a>
+                                    <li>LIPSTICKS</li>
+                                    <li>WONDER WOMAN LIPSTICK RANGE</li>
+                                    <li>LIP CARE</li>
+                                    <li>LIQUID LIP COLOURS</li>
+                                    <li>LIP GLOSS & LINERS</li>
+                                    <li>VALUE SETS</li>
+                                    <li>GIFTING</li>
+                                </div>
+                                <div style="width: 250px;">
+                                    <a><b>FACE</b></a>
+                                    <li>PRIMERS</li>
+                                    <li>POWDER / COMPACT</li>
+                                    <li>FOUNDATION & BB CREAM</li>
+                                    <li>CONCEALERS & CORRECTORS</li>
+                                    <li>BLUSH</li>
+                                    <li>HIGHLIGHTERS & CONTOUR</li>
+                                    <li>BRONZER</li>
+                                    <li>FACE PALETTES</li>
+                                    <li>VALUE SETS</li>
+                                </div>
+                                <div style="width: 250px;">
+                                    <a><b>EYES</b></a>
+                                    <li>EYELINERS</li>
+                                    <li>KAJAL</li>
+                                    <li>EYEBROWS</li>
+                                    <li>EYESHADOW</li>
+                                    <li>MASCARA</li>
+                                    <li>EYESHADOW PALETTES</li>
+                                    <li>VALUE SETS</li>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Brushes Dropdown -->
+                <div class="dropdown">
+                    <button class="dropbtn">BRUSHES</button>
+                    <div class="dropdown-content">
+                        <div class="ddm">
+                            <div style="width: 250px;">
+                                <a><b>FACE BRUSHES</b></a>
+                                <li>Blend Trend Face Brush - 001 Blush</li>
+                                <li>Blend Trend Face Brush - 003 Contour</li>
+                                <li>Blend Trend Face Brush - 006 Highlighter</li>
+                                <li>Blend Trend Face Brush - 007 Powder</li>
+                                <li>Blend Trend Foundation Brush - 052 Kabuki</li>
+                                <li>Blend Trend Dual Face Brush - 075 Powder + Foundation</li>
+                            </div>
+                            <div style="width: 250px;">
+                                <a><b>EYES BRUSHES</b></a>
+                                <li>Blend Trend Eyeshadow Brush - 041 Flat</li>
+                                <li>Blend Trend Eyeshadow Brush - 042 Round</li>
+                                <li>Blend Trend Eyeshadow Brush - 043 Round Xl</li>
+                                <li>Blend Trend Dual Eyeshadow Brush - 412 Flat + Round</li>
+                                <li>Blend Trend Dual Eyeshadow Brush - 413 Flat + Round Xl</li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skincare Dropdown -->
+                <div class="dropdown">
+                    <button class="dropbtn">SKINCARE</button>
+                    <div class="dropdown-content">
+                        <a href="skincare.html">
+                            <div class="CAT">
+                                <a>MOISTURIZERS</a>
+                                <a>SUNSCREEN</a>
+                                <a>COFFEE CULTURE RANGE</a>
+                                <a>SHEET MASK COMBO</a>
+                                <a>AQUAHOLIC RANGE</a>
+                                <a>SETTING MISTS</a>
+                                <a>CITRUS GOT REAL RANGE</a>
+                                <a>MASKS</a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Gifting Dropdown -->
+                <div class="dropdown" id="gt">
+                    <button class="dropbtn">GIFTING</button>
+                    <div class="dropdown-content">
+                        <div class="CAT">
+                            <a>SUGAR MERCH STATION</a>
+                            <a>MAKEUP KITS</a>
+                            <a>BESTSELLERS</a>
+                            <a>VALUE SETS</a>
+                            <a>SUGAR SETS</a>
+                            <a>E-GIFT CARDS</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog, Offers, Stores Buttons -->
+                <div class="dropdown" id="bl">
+                    <button class="dropbtn">BLOG</button>
+                </div>
+                <div class="dropdown" id="ofr">
+                    <button class="dropbtn">OFFERS</button>
+                </div>
+                <div class="dropdown" id="stor">
+                    <button class="dropbtn">STORES</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Middle Section -->
+
+    <div class="container">
+        <!-- <h1>SUGAR ICONICS IN-FOCUS</h1> -->
+        <div class="middle-section">
+            <button class="nav-button left-button">‹</button>
+            <div class="image-wrapper">
+                <div class="image-container">
+                    <img src="./Images/head1.webp" alt="Image 1">
+                    <img src="./Images/head2.webp" alt="Image 2">
+                    <img src="./Images/head3.webp" alt="Image 3">
+                    <img src="./Images/head4.webp" alt="Image 4">
+                </div>
+            </div>
+            <button class="nav-button right-button">›</button>
+        </div>
+    </div>
+    <!-- additional section -->
+    <div class="container">
+        <h1>SUGAR ICONICS IN-FOCUS</h1>
+        <div class="additional-section">
+            <img src="./Images/image22.webp" alt="Additional Image 1">
+            <img src="./Images/image23.webp" alt="Additional Image 2">
+            <img src="./Images/image24.webp" alt="Additional Image 3">
+        </div>
+    </div>
+
+    <!-- Card Section -->
+    <div class="container1">
+
+        <h1>EXCLUSIVE RANGE LAUNCH</h1>
+
+        <div class="card-section">
+            <div class="card">
+                <img src="./Images/image11.gif" alt="Product 1">
+                <p>Product Name</p>
+                <p>Price: Rs. 500</p>
+                <p>Discount: 10%</p>
+                <p><i class="fa fa-heart"></i> Favorite</p>
+                <button>Select Shade</button>
+            </div>
+
+            <div class="card">
+                <img src="./Images/image12.webp" alt="Product 2">
+                <p>Product Name</p>
+                <p>Price: Rs. 600</p>
+                <p>Discount: 15%</p>
+                <p><i class="fa fa-heart"></i> Favorite</p>
+                <button>Select Shade</button>
+            </div>
+
+            <div class="card">
+                <img src="./Images/image13.webp" alt="Product 3">
+                <p>Product Name</p>
+                <p>Price: Rs. 700</p>
+                <p>Discount: 20%</p>
+                <p><i class="fa fa-heart"></i> Favorite</p>
+                <button>Select Shade</button>
+            </div>
+
+            <div class="card">
+                <img src="./Images/image14.webp" alt="Product 4">
+                <p>Product Name</p>
+                <p>Price: Rs. 800</p>
+                <p>Discount: 25%</p>
+                <p><i class="fa fa-heart"></i> Favorite</p>
+                <button>Select Shade</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>SUGAR ICONICS IN-FOCUS</h1>
+        <div class="additional-section">
+            <img src="./Images/image222.webp" alt="Additional Image 1">
+            <img src="./Images/image111.webp" alt="Additional Image 2">
+            <img src="./Images/image222.webp" alt="Additional Image 3">
+        </div>
+    </div>
+
+    <div class="container1">
+        <h1>SUGAR ICONICS IN-FOCUS</h1>
+        <div class="card-section">
+            <div class="card">
+                <img src="./Images/image25.webp" alt="Product 1">
+                <p>Product Name</p>
+                <p>Price: Rs. 500</p>
+                <p>Discount: 10%</p>
+                <p><i class="fa fa-heart"></i> Favorite</p>
+                <button>Select Shade</button>
+            </div>
+
+            <div class="card">
+                <img src="./Images/image26.webp" alt="Product 2">
+                <p>Product Name</p>
+                <p>Price: Rs. 600</p>
+                <p>Discount: 15%</p>
+                <p><i class="fa fa-heart"></i> Favorite</p>
+                <button>Select Shade</button>
+            </div>
+
+            <div class="card">
+                <img src="./Images/image27.webp" alt="Product 3">
+                <p>Product Name</p>
+                <p>Price: Rs. 700</p>
+                <p>Discount: 20%</p>
+                <p><i class="fa fa-heart"></i> Favorite</p>
+                <button>Select Shade</button>
+            </div>
+
+            <div class="card">
+                <img src="./Images/image29.webp" alt="Product 4">
+                <p>Product Name</p>
+                <p>Price: Rs. 800</p>
+                <p>Discount: 25%</p>
+                <p><i class="fa fa-heart"></i> Favorite</p>
+                <button>Select Shade</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Additional Section -->
+    <div class="container">
+        <h1>EXCLUSIVE RANGE LAUNCH</h1>
+
+        <div class="additional-section">
+            <img src="./Images/image22.webp" alt="Additional Image 1">
+            <img src="./Images/image23.webp" alt="Additional Image 2">
+            <img src="./Images/image24.webp" alt="Additional Image 3">
+        </div>
+    </div>
+    <div class="container1">
+
+        <h1>EXCLUSIVE RANGE LAUNCH</h1>
+
+        <div class="card-section">
+            <div class="card">
+                <img src="./Images/image18.webp" alt="Product 1">
+                <p>Product Name</p>
+                <p>Price: Rs. 500</p>
+                <p>Discount: 10%</p>
+                <p><i class="fa fa-heart"></i> Favorite</p>
+                <button>Select Shade</button>
+            </div>
+
+            <div class="card">
+                <img src="./Images/image19.webp" alt="Product 2">
+                <p>Product Name</p>
+                <p>Price: Rs. 600</p>
+                <p>Discount: 15%</p>
+                <p><i class="fa fa-heart"></i> Favorite</p>
+                <button>Select Shade</button>
+            </div>
+
+            <div class="card">
+                <img src="./Images/image20.webp" alt="Product 3">
+                <p>Product Name</p>
+                <p>Price: Rs. 700</p>
+                <p>Discount: 20%</p>
+                <p><i class="fa fa-heart"></i> Favorite</p>
+                <button>Select Shade</button>
+            </div>
+
+            <div class="card">
+                <img src="./Images/image21.webp" alt="Product 4">
+                <p>Product Name</p>
+                <p>Price: Rs. 800</p>
+                <p>Discount: 25%</p>
+                <p><i class="fa fa-heart"></i> Favorite</p>
+                <button>Select Shade</button>
+            </div>
+        </div>
+    </div>
+    <!-- additional section -->
+    <div class="container">
+        <h1>EXCLUSIVE RANGE LAUNCH</h1>
+
+        <div class="additional-section">
+            <img src="./Images/image222.webp" alt="Additional Image 1">
+            <img src="./Images/image111.webp" alt="Additional Image 2">
+            <img src="./Images/image222.webp" alt="Additional Image 3">
+        </div>
+    </div>
+
+    <div class="container2">
+        <h1>CLUB VELLVETTE</h1>
+        <div class="club-section">
+            <div class="club-banner">
+                <img src="https://via.placeholder.com/100?text=Club+Vellvette" alt="Club Vellvette" class="club-logo">
+                <div class="club-content">
+                    <p class="club-offer">Buy @ ₹299 for 6 months</p>
+                    <p class="club-details">Save 20% EXTRA + FREE Shipping</p>
+                    <a href="#" class="club-join-btn" onclick="handleJoinNow()">JOIN NOW</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="container">
+        <h1>EXCLUSIVE RANGE LAUNCH</h1>
+        <!-- additional section -->
+        <div class="additional-section">
+            <img src="./Images/image15.webp" alt="Additional Image 1">
+            <img src="./Images/image16.webp" alt="Additional Image 2">
+            <img src="./Images/image17.webp" alt="Additional Image 3">
+        </div>
+    </div>
+
+    <div class="container1">
+        <h1>EXCLUSIVE RANGE LAUNCH</h1>
+        <!-- Card Section -->
+        <div class="card-section">
+            <div class="card">
+                <img src="./Images/image36.webp" alt="Product 1">
+                <p>Product Name</p>
+                <p>Price: Rs. 500</p>
+                <p>Discount: 10%</p>
+                <p><i class="fa fa-heart"></i> Favorite</p>
+                <button>Select Shade</button>
+            </div>
+
+            <div class="card">
+                <img src="./Images/image37.webp" alt="Product 2">
+                <p>Product Name</p>
+                <p>Price: Rs. 600</p>
+                <p>Discount: 15%</p>
+                <p><i class="fa fa-heart"></i> Favorite</p>
+                <button>Select Shade</button>
+            </div>
+
+            <div class="card">
+                <img src="./Images/image38.webp" alt="Product 3">
+                <p>Product Name</p>
+                <p>Price: Rs. 700</p>
+                <p>Discount: 20%</p>
+                <p><i class="fa fa-heart"></i> Favorite</p>
+                <button>Select Shade</button>
+            </div>
+
+            <div class="card">
+                <img src="./Images/image39.webp" alt="Product 4">
+                <p>Product Name</p>
+                <p>Price: Rs. 800</p>
+                <p>Discount: 25%</p>
+                <p><i class="fa fa-heart"></i> Favorite</p>
+                <button>Select Shade</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h1>EXCLUSIVE RANGE LAUNCH</h1>
+        <!-- additional section -->
+        <div class="additional-section">
+            <img src="./Images/image22.webp" alt="Additional Image 1">
+            <img src="./Images/image23.webp" alt="Additional Image 2">
+            <img src="./Images/image24.webp" alt="Additional Image 3">
+        </div>
+    </div>
+
+
+
+    <div class="wrapper">
+        <div class="stay-in-touch-section">
+            <div class="info">
+                <i class="fas fa-chevron-right clickable-icon" onclick="openNewPage()"></i>
+                <span>READ MORE ABOUT SUGAR COSMETICS</span>
+            </div>
+            <div class="subscription">
+                <h2>LET'S STAY IN TOUCH</h2>
+                <p>Get the latest beauty tips straight to your inbox. Can't wait to connect!</p>
+                <div class="email-subscription">
+                    <input id="emailInput" type="email" placeholder="Enter Email" required>
+                    <button type="submit" onclick="handleSubscribe()">SUBSCRIBE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div id="footer">
+        <div class="footer-container">
+            <!-- Company Logo -->
+            <div class="footer-company-logo">
+                <div><img src="https://in.sugarcosmetics.com/Footer_sugar_icon.png" alt="company logo"></div>
+            </div>
+            <hr>
+            <div class="footer-reachout-links">
+                <div>
+                    <div><a href="https://www.facebook.com/trySUGAR/"><i class="fab fa-facebook"></i></a></div>
+                    <div><a href="mailto:hello@sugarcosmetics.com"><i class="fas fa-envelope"></i></a></div>
+                    <div><a href="https://www.instagram.com/trysugar/?hl=en"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div><a href="https://www.pinterest.com/sugarcosmetics/"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                    <div><a href="https://sugarcosmetics-blog.tumblr.com/"><i class="fab fa-tumblr"></i></a></div>
+                    <div><a href="https://www.youtube.com/channel/UCKVqnev2idvmUNKc2b91B8g"><i
+                                class="fab fa-youtube"></i></a></div>
+                    <div><a href="https://twitter.com/trySUGAR"><i class="fab fa-twitter"></i></a></div>
+                </div>
+            </div>
+
+            <!-- Newsletter Signup and App Download -->
+            <div class="footer-signup-app">
+                <div>
+                    <h5>SUBSCRIBE TO OUR NEWSLETTER</h5>
+                    <div>
+                        <input type="email" id="emailInput" placeholder="Your email address" role="textbox">
+                        <div class="footer-signup-app-button">
+                            <button id="signupButton" role="button">SIGN UP</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div>
+                    <h5>GET THE NEW SUGAR APP TODAY.</h5>
+                    <div>
+                        <div id="footer-para">
+                            <p>Tap into a better shopping experience.</p>
+                        </div>
+                        <div id="footer-play-store"><a href="https://sugarcosmetics.app.link/WebFApp"><img
+                                    src="https://in.sugarcosmetics.com/playstore.png" alt="Play Store"></a></div>
+                        <div id="footer-apple-store"><a href="https://sugarcosmetics.app.link/WebFApp"><img
+                                    src="https://in.sugarcosmetics.com/apple-store.png" alt="Apple Store"></a></div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!-- Information Links -->
+            <div class="footer-information">
+                <div>
+                    <h5>INFORMATION</h5>
+                </div>
+                <div>
+                    <div><a href="mailto:hello@sugarcosmetics.com">Contact Us</a></div>
+                    <div><a href="https://in.sugarcosmetics.com/pages/terms-conditions">Terms & Conditions</a></div>
+                    <div><a href="https://in.sugarcosmetics.com/pages/returns-refunds">Returns</a></div>
+                    <div><a href="https://in.sugarcosmetics.com/pages/faqs">FAQs</a></div>
+                    <div><a href="https://in.sugarcosmetics.com/pages/about-us">About Us</a></div>
+                </div>
+            </div>
+            <!-- Contact and Support -->
+            <div class="footer-get-in-touch">
+                <div>
+                    <h5>GET IN TOUCH</h5>
+                </div>
+                <div>
+                    <div class="footer-get-in-touch-box1">
+                        <div>
+                            <img src="https://in.sugarcosmetics.com/desc-images/phone_android_white.svg"
+                                alt="Phone Icon">
+                            <div>Call us at</div>
+                        </div>
+                        <a href="tel:1800-209-9933">1800-209-9933</a>
+                        <div>Monday to Friday : 9 AM to 7 PM</div>
+                    </div>
+                    <div class="footer-get-in-touch-box2">
+                        <div>Support</div>
+                        <a href="mailto:hello@sugarcosmetics.com">hello@sugarcosmetics.com</a>
+                    </div>
+                    <div class="footer-get-in-touch-box3">
+                        <div>WORK WITH US</div>
+                        <a href="mailto:careers@sugarcosmetics.com">careers@sugarcosmetics.com</a>
+                    </div>
+                    <div class="footer-get-in-touch-box4">
+                        <div>PRESS & MEDIA</div>
+                        <a href="mailto:pr@sugarcosmetics.com">pr@sugarcosmetics.com</a>
+                    </div>
+                    <div class="footer-get-in-touch-box5">
+                        <div>INFLUENCER COLLAB</div>
+                        <a href="https://blog.sugarcosmetics.com/collab">JOIN US</a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                Copyright © 2022 SUGAR Cosmetics. All rights reserved.
+            </div>
+        </div>
+    </div>
+    <script src="./Script.js"></script>
+
+</body>
+
+</html>
