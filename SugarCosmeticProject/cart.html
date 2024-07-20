@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h1>Shopping Cart</h1>
+    <div class="cart-item">
+        <p>Item 1</p>
+        <p>$10</p>
+    </div>
+    <div class="cart-item">
+        <p>Item 2</p>
+        <p>$20</p>
+    </div>
+    <div class="cart-item">
+        <p>Item 3</p>
+        <p>$30</p>
+    </div>
+    <h2>Total: $60</h2>
+    <button onclick="checkout()">Proceed to Checkout</button>
+
+    <script>
+        function checkout() {
+            alert('Proceeding to checkout!');
+            // Add your checkout logic here
+        }
+    </script>
+</body>
+</html>

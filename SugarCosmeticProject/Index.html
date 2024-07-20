@@ -30,6 +30,7 @@
 
         <!-- Main Navbar -->
 
+
         <div id="mainNavbar">
             <img id="logoImage"
                 src="https://cdn.sanity.io/images/gxmub2ol/production/98a9ebae1456c75c727d5fab8c934dae908a144c-1493x380.png"
@@ -46,21 +47,25 @@
                     <p id="loginText">Login/Register</p>
                 </a>
             </div>
+            <div class="dropbtn">
+                <i class="fas fa-chevron-down dropbtn-icon"></i>
+                <div class="dropdown-content">
+                    <a href="#" onclick="logout()">Logout</a>
+                </div>
+            </div>
+
             <div id="hbd">
                 <div>
                     <i class="fas fa-heart"></i>
                 </div>
-                <a href="cart.html">
-                    <div class="redCart">
-                        <i class="fas fa-shopping-bag"></i>
-                    </div>
-                </a>
-                <div>
+                <div class="redCart" onclick="openCartPage()">
+                    <i class="fas fa-shopping-bag"></i>
+                </div>
+                <div onclick="openOfferPage()">
                     <i class="fas fa-percentage"></i>
                 </div>
             </div>
         </div>
-
 
         <!-- Lower Navbar -->
         <div id="lower-nav">
@@ -380,7 +385,7 @@
         </div>
     </div>
 
-    
+
     <div class="container">
         <h1>EXCLUSIVE RANGE LAUNCH</h1>
         <!-- additional section -->
@@ -486,7 +491,7 @@
 
             <!-- Newsletter Signup and App Download -->
             <div class="footer-signup-app">
-                <div>
+                <!-- <div>
                     <h5>SUBSCRIBE TO OUR NEWSLETTER</h5>
                     <div>
                         <input type="email" id="emailInput" placeholder="Your email address" role="textbox">
@@ -495,7 +500,17 @@
                         </div>
                     </div>
 
+                </div> -->
+                <div id="subscriptionSection">
+                    <h5>SUBSCRIBE TO OUR NEWSLETTER</h5>
+                    <div>
+                        <input type="email" id="emailInput" placeholder="Your email address" role="textbox">
+                        <div class="footer-signup-app-button">
+                            <button id="signupButton" role="button">SIGN UP</button>
+                        </div>
+                    </div>
                 </div>
+                                
                 <div>
                     <h5>GET THE NEW SUGAR APP TODAY.</h5>
                     <div>

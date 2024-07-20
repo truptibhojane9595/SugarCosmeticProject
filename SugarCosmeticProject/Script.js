@@ -1,4 +1,19 @@
-//search bar code...
+function navigateToHome() {
+  window.location.href = 'index.html';
+}
+
+function openCartPage() {
+  window.location.href = './cart.html';
+}
+
+function openOfferPage() {
+  window.location.href = './offer.html';
+}
+
+function logout() {
+  // Add your logout logic here
+  alert('Logged out!');
+}
 
 //...........................................................................................................
 //middle section.....
@@ -54,3 +69,14 @@ function validateEmail(email) {
     return re.test(email);
 }
 //.......................................................................................................................................
+
+document.getElementById('signupButton').addEventListener('click', function() {
+  const email = document.getElementById('emailInput').value;
+  if (email) {
+      alert('Thank you for subscribing with ' + email);
+      // Add your subscription logic here, e.g., send the email to your server
+      document.getElementById('emailInput').value = ''; // Clear the email input field
+  } else {
+      alert('Please enter a valid email address.');
+  }
+});
